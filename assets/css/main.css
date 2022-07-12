@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+#weather-app-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+#weather-app-content .sidebar {
+  width: 25%;
+  background-color: #1e213a;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+#weather-app-content .sidebar::-webkit-scrollbar {
+  width: 1px;
+}
+#weather-app-content .sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+#weather-app-content .sidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+#weather-app-content .sidebar::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+#weather-app-content .sidebar .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin: 42px 30px;
+}
+#weather-app-content .sidebar .buttons input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  border-bottom: 1px solid #dedede;
+  color: #fff;
+  transition: 300ms all;
+}
+#weather-app-content .sidebar .buttons input::-moz-placeholder {
+  font-size: 12px !important;
+}
+#weather-app-content .sidebar .buttons input:-ms-input-placeholder {
+  font-size: 12px !important;
+}
+#weather-app-content .sidebar .buttons input::placeholder {
+  font-size: 12px !important;
+}
+#weather-app-content .sidebar .buttons input:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#weather-app-content .sidebar .wheather-detail {
+  width: 100%;
+  height: 195px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#weather-app-content .sidebar .wheather-detail .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 195px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.2;
+}
+#weather-app-content .sidebar .wheather-detail img:last-child {
+  width: 125px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+#weather-app-content .sidebar .weather-text .derece {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+#weather-app-content .sidebar .weather-text .derece strong {
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 169px;
+  color: #e7e7eb;
+}
+#weather-app-content .sidebar .weather-text .derece span {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #a09fb1;
+}
+#weather-app-content .sidebar .weather-text .desc {
+  text-transform: uppercase;
+}
+#weather-app-content .sidebar .weather-text .detail-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #88869d;
+  text-align: center;
+  margin: 30px 0;
+}
+#weather-app-content .sidebar .weather-text .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #88869d;
+  text-transform: uppercase;
+}
+#weather-app-content .sidebar .weather-text .location i {
+  margin-right: 10px;
+}
+#weather-app-content .gray-text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #a09fb1;
+  display: block;
+}
+#weather-app-content .content {
+  width: 75%;
+  height: 100%;
+  background-color: #100e1d;
+  padding: 100px 100px 0 100px;
+  overflow-y: scroll;
+}
+#weather-app-content .content h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e7e7eb;
+  margin: 50px 0 30px 0;
+}
+#weather-app-content .content .top-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#weather-app-content .content .top-items .top-item {
+  padding: 18px 20px;
+  background-color: #1e213a;
+  color: #fff;
+  width: 140px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#weather-app-content .content .top-items .top-item .time {
+  display: flex;
+}
+#weather-app-content .content .top-items .top-item .time span {
+  margin: 0 2px;
+}
+#weather-app-content .content .top-items .top-item img {
+  width: 56.44px;
+  height: auto;
+  margin: auto 0;
+}
+#weather-app-content .content .top-items .top-item span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  text-align: center;
+  color: #e7e7eb;
+}
+#weather-app-content .content .top-items .top-item .max-min {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+}
+#weather-app-content .content .top-items .top-item .max-min span:last-child {
+  color: #a09fb1;
+}
+#weather-app-content .content .bottom-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#weather-app-content .content .bottom-items .bottom-item {
+  background: #1e213a;
+  padding: 20px 0;
+  width: 48%;
+  margin-bottom: 4%;
+}
+#weather-app-content .content .bottom-items .bottom-item p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #e7e7eb;
+  display: block;
+}
+#weather-app-content .content .bottom-items .bottom-item strong {
+  display: block;
+  color: #e7e7eb;
+  font-size: 28px;
+  text-align: center;
+}
+#weather-app-content .content .bottom-items .bottom-item strong span {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+#weather-app-content .content .copyright {
+  color: #a09fb1;
+  text-align: center;
+  margin: 20px 0;
+}
+#weather-app-content .content .copyright a {
+  color: #fff;
+  text-decoration: underline;
+}
+#weather-app-content .content .copyright a:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    width: 30% !important;
+  }
+  .content {
+    width: 70% !important;
+  }
+  .content .bottom-items .bottom-item {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 880px) {
+  #weather-app-content {
+    flex-direction: column !important;
+  }
+  .sidebar {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .content {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .content {
+    padding: 50px !important;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .content {
+    padding: 30px !important;
+  }
+  .content .top-item {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=main.css.map */

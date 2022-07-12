@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="shortcut icon" href="assets/img/devchallenges.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div id="weather-app-content">
+      <div class="sidebar">
+        <div class="buttons">
+          <input type="text" placeholder="type city name and press enter" />
+        </div>
+        <div class="wheather-detail">
+          <img src="assets/img/Cloud-background.png" alt="Cloud-background.png" class="bg-image" />
+          <img class="mainIcon" src="assets/img/Shower.png" alt="weather-icon.png" />
+        </div>
+        <div class="weather-text">
+          <div class="derece">
+            <strong class="temp">15</strong>
+            <span>°C</span>
+          </div>
+          <span class="gray-text desc">Shower</span>
+          <div class="detail-text">
+            <span>Today</span>
+            <span>-</span>
+            <span><span class="day">Fri</span> <span class="dayNumber">5</span> <span class="month">Jun</span></span>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="cityName">Helsinki</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="top-items">
+          <div class="top-item">
+            <span class="time">Today</span>
+            <img class="day1Icon" src="assets/img/HeavyRain.png" alt="icon.png" />
+            <div class="max-min">
+              <span class="dayMax1">16°C</span>
+              <span class="dayMin1">11°C</span>
+            </div>
+          </div>
+          <div class="top-item">
+            <span class="time"> Tomarrow </span>
+            <img class="day2Icon" src="assets/img/HeavyRain.png" alt="icon.png" />
+            <div class="max-min">
+              <span class="dayMax2">16°C</span>
+              <span class="dayMin2">11°C</span>
+            </div>
+          </div>
+          <div class="top-item">
+            <div class="time">
+              <span class="day3">wed</span>,<span class="dayNumber3">7</span>
+              <span class="dayMonth3">Jun</span>
+            </div>
+            <img class="day3Icon" src="assets/img/HeavyRain.png" alt="icon.png" />
+            <div class="max-min">
+              <span class="dayMax3">16°C</span>
+              <span class="dayMin3">11°C</span>
+            </div>
+          </div>
+          <div class="top-item">
+            <div class="time">
+              <span class="day4">wed</span>,<span class="dayNumber4">7</span>
+              <span class="dayMonth4">Jun</span>
+            </div>
+            <img class="day4Icon" src="assets/img/HeavyRain.png" alt="icon.png" />
+            <div class="max-min">
+              <span class="dayMax4">16°C</span>
+              <span class="dayMin4">11°C</span>
+            </div>
+          </div>
+          <div class="top-item">
+            <div class="time">
+              <span class="day5">wed</span>,<span class="dayNumber5">7</span>
+              <span class="dayMonth5">Jun</span>
+            </div>
+            <img class="day5Icon" src="assets/img/HeavyRain.png" alt="icon.png" />
+            <div class="max-min">
+              <span class="dayMax5">16°C</span>
+              <span class="dayMin5">11°C</span>
+            </div>
+          </div>
+        </div>
+        <h1>Today's Highlights</h1>
+        <div class="bottom-items">
+          <div class="bottom-item">
+            <p>Wind Status</p>
+            <strong><span class="wind">7</span>km/h</strong>
+          </div>
+          <div class="bottom-item">
+            <p>Humudity</p>
+            <strong><span class="humidity">84</span>%</strong>
+          </div>
+          <div class="bottom-item">
+            <p>Visibility</p>
+            <strong><span class="visibility">6,4</span>miles</strong>
+          </div>
+          <div class="bottom-item">
+            <p>Air Pressure</p>
+            <strong><span class="pressure">998</span>mb</strong>
+          </div>
+        </div>
+
+        <div class="copyright">created by <a href="https://keremgns.com/">keremgunes.com</a> - devchallenges.io</div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
