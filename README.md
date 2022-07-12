@@ -1,4 +1,4 @@
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Javascript Weather App</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,76 +6,70 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a target="_blank"  href="https://js-weather-app-seven.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a target="_blank"  href="https://devchallenges.io/solutions/V3vzAgY1M2Fbi8tvHZvQ">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
+    <a target="_blank"  href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
       Challenge
+    </a>
+    <span> | </span>
+    <a target="_blank" href="https://www.patreon.com/keremgunes">
+      Patreon
     </a>
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+<br>
 
 ## Table of Contents
 
 - [Overview](#overview)
   - [Built With](#built-with)
-- [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-
-<!-- OVERVIEW -->
+- [Will you buy me a coffee?](#will-you-buy-me-a-coffee)
 
 ## Overview
 
 ![screenshot](desktop.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+I had a lot of fun preparing this project, and then I will renew the project by adding something from myself. I hope you like it and use it :))
+Api key gives 50 queries per day, if the application does not work, try again the next day. :D
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
-
-## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) was to build an application to complete the given user stories.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Scss
+- Javascript
+- [Accuweather API](https://developer.accuweather.com/)
 
 ## How To Use
-
-<!-- Example: -->
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/keremgunes27/js-weather-app
 
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+# Add your own accuwather api key (app.js)
+const key = "XXXXXXXXXXXXX";
 ```
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [keremgns.com](https://keremgns.com/)
+- GitHub [@keremgunes27](https://github.com/keremgunes27)
+- Twitter [@keremmgns](https://twitter.com/keremmgns)
+
+<br>
+
+# Will you buy me a coffee?
+
+[Patreon](https://www.patreon.com/keremgunes)

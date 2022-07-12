@@ -15,6 +15,9 @@ searchInput.addEventListener("keypress", (event) => {
   }
 });
 
+//
+alert("Api key gives 50 queries per day, if the application does not work, try again the next day. :D");
+//
 const cityName = document.querySelector(".cityName");
 const descText = document.querySelector(".desc");
 const tempText = document.querySelector(".temp");
